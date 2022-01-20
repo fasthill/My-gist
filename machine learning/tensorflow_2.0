@@ -1,0 +1,7 @@
+Starting from Tensorflow 1.9, one can pass tf.data.Dataset object directly into keras.Model.fit() 
+and it would act similar to fit_generator.
+
+There are many changes in TensorFlow 2.0 to make users more productive, including removing redundant APIs.
+(https://blog.tensorflow.org/2019/02/effective-tensorflow-20-best-practices.html)
+https://github.com/tensorflow/community/blob/master/rfcs/20180827-api-names.md
+
