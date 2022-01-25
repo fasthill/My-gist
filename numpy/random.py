@@ -85,3 +85,13 @@ np.random.permutation(arr)
 #        [0, 1, 2],
 #        [3, 4, 5]])
 
+'''
+random.shuffle(x)
+Modify a sequence in-place by shuffling its contents.
+random.permutation은 원자료를 바꾸지 않으나 shffule은 inplace로 바꿈
+'''
+arr = np.arange(10)
+np.random.shuffle(arr)
+arr  # arr이 바꾸어 있음
+# [1 7 5 2 9 4 3 6 0 8] # random
+np.random.permutation(arr) # arr 자체는 바뀌지 않음.
