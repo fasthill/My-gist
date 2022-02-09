@@ -1,0 +1,17 @@
+ExecutableNotFound: failed to execute WindowsPath('dot'), make sure the Graphviz executables are on your systems' PATH
+
+위와 같은 에러메시지가 발생하면,
+
+pip install graphviz와 별개로 진행.
+
+https://graphviz.org/download/ 로 가서,
+최신 window버젼으로 다운 (graphviz-2.50.0 (64-bit) EXE installer [sha256])
+
+다운후 인스톨,
+인스톨시, 'Add Graphviz to the system PATH for all users' 선택하고 진행
+default install 위치: Program Files/Graphviz
+
+.ipynb에서, 아래 내용 삽입후 run.
+import os
+os.environ["PATH"]+=os.pathsep+'C:/Program Files/Graphviz/bin/'
+
