@@ -36,10 +36,13 @@ As a result, passing an instance instead of an integer may be preferable,
 since it will allow the estimator RNG to vary for each fold.
 
 seed 상수를 사용하는 것보다는 np.random.RandomState() 를 사용하기를 권고함.
-===================================================================================
-
+RandomState() 인수를 사용하지 않는 것이 추천함. (아래 stackoverflow에서)
 https://stackoverflow.com/questions/5836335/consistently-create-same-random-numpy-array/5837352#comment6712034_5837352
 
+인수를 사용하면, seed 상수를 사용하는 결과와 같이 항상 일정한 결과가 나옴.
+===================================================================================
+
+한글로 설명이 잘되어 있음.
 https://frhyme.github.io/python-libs/np_random_randomstate/
 
 prng = np.random.RandomState(seed=3) #prng : pseudorandom number generator
