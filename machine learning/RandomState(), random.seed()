@@ -1,0 +1,50 @@
+controlling random_state: https://scikit-learn.org/stable/common_pitfalls.html
+
+>>> from sklearn.ensemble import RandomForestClassifier
+>>> from sklearn.datasets import make_classification
+>>> from sklearn.model_selection import cross_val_score
+>>> import numpy as np
+
+>>> X, y = make_classification(random_state=0)
+
+>>> rf_123 = RandomForestClassifier(random_state=123)
+>>> cross_val_score(rf_123, X, y)
+array([0.85, 0.95, 0.95, 0.9 , 0.9 ])
+
+>>> rf_inst = RandomForestClassifier(random_state=np.random.RandomState(0))
+>>> cross_val_score(rf_inst, X, y)
+array([0.9 , 0.95, 0.95, 0.9 , 0.9 ])
+
+'''
+We see that the cross-validated scores of rf_123 and rf_inst are different, 
+as should be expected since we didn’t pass the same random_state parameter. 
+However, the difference between these scores is more subtle than it looks, 
+and the cross-validation procedures that were performed by cross_val_score 
+significantly differ in each case:
+
+Since rf_123 was passed an integer, every call to fit uses the same RNG: 
+this means that all random characteristics of the random forest estimator 
+will be the same for each of the 5 folds of the CV procedure. In particular, 
+the (randomly chosen) subset of features of the estimator will be the same across all folds.
+
+Since rf_inst was passed a RandomState instance, each call to fit starts from a different RNG. 
+As a result, the random subset of features will be different for each folds.
+
+While having a constant estimator RNG across folds isn’t inherently wrong, 
+we usually want CV results that are robust w.r.t. the estimator’s randomness. 
+As a result, passing an instance instead of an integer may be preferable, 
+since it will allow the estimator RNG to vary for each fold.
+
+seed 상수를 사용하는 것보다는 np.random.RandomState() 를 사용하기를 권고함.
+===================================================================================
+
+https://stackoverflow.com/questions/5836335/consistently-create-same-random-numpy-array/5837352#comment6712034_5837352
+
+https://frhyme.github.io/python-libs/np_random_randomstate/
+
+prng = np.random.RandomState(seed=3) #prng : pseudorandom number generator
+# print(prng.random(size=3))
+
+prng.random(size=3)
+
+https://www.sicara.ai/blog/2019-01-28-how-computer-generate-random-numbers
