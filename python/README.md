@@ -2,6 +2,7 @@
 -- install VisualStudio first, https://visualstudio.microsoft.com/downloads/ -- <br>
 -> 맨 아래 쪽에 "재배포 가능 패키지 및 빌드 도구"  영역 선택 <br>
 -> Microsoft Build Tools 2015 업데이트 3 클릭 후 설치 <br>
+-> VS community 최근본 설치 후 rebooting <br>
 
 * pip install wheel
 * pip install scikit-surprise <br>
