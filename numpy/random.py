@@ -44,6 +44,7 @@ np.random.randint(5, size=(2, 4))
 '''
 random.randn(d0, d1, ..., dn)
 Return a sample (or samples) from the “standard normal” distribution.
+mean: 0, std: 1
 '''
 np.random.randn()
 # 2.1923875335537315
