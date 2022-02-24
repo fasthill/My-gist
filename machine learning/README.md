@@ -8,3 +8,7 @@ The cross_validate function differs from cross_val_score in two ways -
 * It allows specifying multiple metrics for evaluation.
 * It returns a dict containing training scores, fit-times and score-times in addition to the test score. <br>
 [stack overflow설명](https://datascience.stackexchange.com/questions/28441/what-is-the-difference-between-cross-validate-and-cross-val-score)
+
+### 표준화를 해야 하는 ML 모델
+https://builtin.com/data-science/when-and-why-standardize-your-data
+
