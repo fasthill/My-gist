@@ -69,6 +69,11 @@ np.random.random((2,3)) #  == np.random.rand(2,3)
 #        [0.72119264, 0.54723559, 0.53892759]])
 # == np.random.random([2,3])
 
+'''
+numpy.random.uniform(low=0.0, high=1.0, size=None)
+Draw samples from a uniform distribution.
+'''
+np.random.uniform(0.0001, 0.001)
 
 
 '''
