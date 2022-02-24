@@ -12,4 +12,3 @@ The cross_validate function differs from cross_val_score in two ways -
 ### 표준화를 해야 하는 ML 모델
 [읽어 볼 것 1 Good](https://www.listendata.com/2017/04/how-to-standardize-variable-in-regression.html)
 [읽어 볼 것 2](https://builtin.com/data-science/when-and-why-standardize-your-data)
-
