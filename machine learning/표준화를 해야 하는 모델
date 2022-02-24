@@ -1,0 +1,66 @@
+
+When to standardize data and why?
+As seen above, for distance based models, standardization is performed to prevent features 
+with wider ranges from dominating the distance metric. 
+But the reason we standardize data is not the same for all machine learning models, and differs from one model to another.
+
+So before which ML models and methods you have to standardize your data and why ?
+
+1- BEFORE PCA:
+In Principal Component Analysis, features with high variances/wide ranges, 
+get more weight than those with low variance, and consequently, they end up illegitimately 
+dominating the First Principal Components (Components with maximum variance). 
+I used the word “Illegitimately” here, because the reason these features have high variances 
+compared to the other ones is just because they were measured in different scales.
+
+Standardization can prevent this, by giving same wheightage to all features.
+
+
+2- BEFORE CLUSTERING:
+Clustering models are distance based algorithms, in order to measure similarities 
+between observations and form clusters they use a distance metric. 
+So, features with high ranges will have a bigger influence on the clustering. 
+Therefore, standardization is required before building a clustering model.
+
+3- BEFORE KNN:
+k-nearest neighbors is a distance based classifier that classifies new observations 
+based on similarity measures (e.g., distance metrics) with labeled observations of the training set. 
+Standardization makes all variables to contribute equally to the similarity measures .
+
+4- BEFORE SVM
+Support Vector Machine tries to maximize the distance between the separating plane and the support vectors. 
+If one feature has very large values, it will dominate over other features when calculating the distance. 
+So Standardization gives all features the same influence on the distance metric.
+
+5- BEFORE MEASURING VARIABLE IMPORTANCE IN REGRESSION MODELS
+You can measure variable importance in regression analysis, 
+by fitting a regression model using the standardized independent variables and 
+comparing the absolute value of their standardized coefficients. 
+But, if the independent variables are not standardized, comparing their coefficients becomes meaningless.
+
+6- BEFORE LASSO AND RIDGE REGRESSION
+LASSO and Ridge regressions place a penalty on the magnitude of the coefficients 
+associated to each variable. And the scale of variables will affect how much penalty will be 
+applied on their coefficients. 
+Because coefficients of variables with large variance are small and thus less penalized. 
+Therefore, standardization is required before fitting both regressions.
+
+ 
+Cases when standardization is not needed? 
+LOGISTIC REGRESSION AND TREE BASED MODELS
+Logistic Regression and Tree based algorithms such as 
+Decision Tree, Random forest and gradient boosting, are not sensitive to the magnitude of variables. 
+So standardization is not needed before fitting this kind of models.
+
+ 
+Wrapping up data standardization
+As we saw in this post, 
+when to standardize and when not to, depends on which model you want to use and 
+what you want to do with it. 
+So, it’s very important for a ML developer to understand the internal functioning of machine learning algorithms, 
+to be able to know when to standardize data and to build a successful machine learning model.
+
+
+[365DataScience.com]: Explaining Standardization Step-By-Step
+[Listendata.com ]: when and why to standardize a variable
+ 
