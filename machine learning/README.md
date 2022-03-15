@@ -19,3 +19,6 @@ The cross_validate function differs from cross_val_score in two ways -
 
 ### SimpleRNN, RNN, LSTM 등을 중복하여 사용할 경우
 * 마지막 SimpleRNN을 제외하고 이전에 나오는 SimpleRNN의 parameter "return_sequences=True"를 반드시 지정해야 함.
+
+### How to use a cross-validated model for prediction?
+* https://stats.stackexchange.com/questions/411290/how-to-use-a-cross-validated-model-for-prediction
