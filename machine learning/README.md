@@ -22,3 +22,8 @@ The cross_validate function differs from cross_val_score in two ways -
 
 ### How to use a cross-validated model for prediction?
 * https://stats.stackexchange.com/questions/411290/how-to-use-a-cross-validated-model-for-prediction
+
+### stratify argument in train_test_split vs. StratifiedShuffleSplit
+* [see this answer in stackoverflow](https://stackoverflow.com/questions/61299828/stratify-argument-in-train-test-split-vs-stratifiedshufflesplit)
+* train_test_split에서 stratify argument사용은 1회에 한하여 사용됨. one time split 반면에
+* StratifiedShuffleSplit class 사용은 cross validation에서 사용되면서 반복적인 batch_size로 나눌때마다 사용됨
