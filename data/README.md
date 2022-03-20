@@ -11,18 +11,20 @@
 * [kaggle](https://www.kaggle.com/datasets)
 * [AWS](https://registry.opendata.aws)
 
+##### Meta Portal
+* [DataPortal](http://dataportals.org/) &nbsp;&nbsp;세계 각국의 지도 표기로 찾기
+* [Open Data Monitor](http://opendatamonitor.eu) &nbsp;&nbsp;EU open data
+* [퀀들](http://quandl.com) &nbsp;&nbsp;NASDAQ data link
 
-#### Meta Portal
-* [DataPortal](http://dataportals.org/) 세계 각국의 지도 표기로 찾기
+##### 공개 데이터가 나열되어 있는 페이지
+* [위키백과 ML datasets, https://goo.gl/SJHN2k](https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research#Multivariate_data)
+* [Quora](https://homl.info/10) &nbsp;&nbsp;Quera ANS to "Where can I find large datasets open to the public?"
+* [Google](https://toolbox.google.com/datasetsearch) &nbsp;&nbsp; google dataset search
+* [reddit](https://www.reddit.com/r/datasets) &nbsp;&nbsp; dataset 문의 요청, 답변
 
 
-* [Google](https://toolbox.google.com/datasetsearch)
-* [reddit](https://www.reddit.com/r/datasets)
-
-
-### data site (국내)
+#### data site (국내)
 * [AIFactory](https://aifactory.space)
 * [공공데이터포털](https://www.data.go.kr/)
 * [AIHub](https://www.aihub.or.kr)
 * [DACON](https://dacon.io)
-
