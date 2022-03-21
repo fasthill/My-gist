@@ -1,6 +1,9 @@
 # DataFrame 결측값 여부 확인, 결측값 개수 : 
 '''
 isnull(), notnull(), df.isnull().sum(), df.notnull().sum(), df.isnull().sum(1), df.notnull().sum(1)
+
+df.isna( ) : isnull( )과 완전히 동일.
+df.notna( ) : notnull( )과 완전히 동일.
 '''
 import pandas as pd
 
