@@ -15,7 +15,7 @@ The cross_validate function differs from cross_val_score in two ways -
 
 ### ■ sparse_categorical_crossentropy vs. categorical_crossentropy
 * sparse_categorical_crossentropy : 정수로 되어 있는 target 값을 그대로 사용할 경우 사용
-* categorical_crossentropy : targer값이 one hot encoding으로 되어 있는 경우 사용
+* categorical_crossentropy : target값이 one hot encoding으로 되어 있는 경우 사용
 
 ### ■ SimpleRNN, RNN, LSTM 등을 중복하여 사용할 경우
 * 마지막 SimpleRNN을 제외하고 이전에 나오는 SimpleRNN의 parameter "return_sequences=True"를 반드시 지정해야 함.
