@@ -1,1 +1,10 @@
 [카테고리형 데이터를 수치형으로 변환하기](https://teddylee777.github.io/scikit-learn/labelencoder-%EC%82%AC%EC%9A%A9%EB%B2%95)
+
+* pd.factorize()와 LabelEncoder()
+- pd.factorize()와 LabelEncoder()가 같은 방식으로 인코딩된 값을 반환한다.
+- 하나의 열에 해당 범주들이 인코딩된 결과를 반환한다.
+- 즉, 범주의 개수가 n일 경우, 0~n의 value들이 하나의 열에 생성된다.
+
+* pd.get_dummies(), OneHotEncoder()
+- pd.get_dummies(), OneHotEncoder()가 같은 방식으로 인코딩된 값을 반환한다.
+- Feature_Value 의 열을 생성하고, Feature == value 일 경우, 1 의 값을 그렇지 않을 경우 0 의 값을 갖는다.
