@@ -21,7 +21,7 @@ np.random.choice(5, 3, replace=False, p=[0.1, 0, 0.3, 0.6, 0])
 '''
 random.rand(d0, d1, ..., dn)
 Create an array of the given shape and populate it with random samples 
-from a uniform distribution over [0, 1).
+from a uniform distribution over [0, 1). 0 이상 1 미만
 '''
 np.random.rand(3,2)
 # array([[ 0.14022471,  0.96360618],  
@@ -62,7 +62,7 @@ np.random.randn(2, 4) # 2 by 4 array
 
 '''
 random.random(size=None)
-Return random floats in the half-open interval [0.0, 1.0). 
+Return random floats in the half-open interval [0.0, 1.0). 0.0 이상 1.0 미만
 '''
 np.random.random((2,3)) #  == np.random.rand(2,3)
 # array([[0.37689245, 0.83643531, 0.45999588],
