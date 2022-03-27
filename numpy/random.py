@@ -31,6 +31,7 @@ np.random.rand(3,2)
 '''
 random.randint(low, high=None, size=None, dtype=int)
 Return random integers from low (inclusive) to high (exclusive).
+[low, high) low 이상 high 
 '''
 np.random.randint(2, size=10)
 # array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])
