@@ -8,4 +8,5 @@
 
 ### Read carefully [Feature columns](https://github.com/tensorflow/docs-l10n/blob/master/site/ko/tutorials/structured_data/feature_columns.ipynb)
 
-[feature engineering](https://github.com/fasthill/feature-engineering-and-feature-selection)
+[feature engineering 1](https://github.com/fasthill/feature-engineering-and-feature-selection) <br>
+[Feature engineering 2](https://towardsdatascience.com/what-is-feature-engineering-importance-tools-and-techniques-for-machine-learning-2080b0269f10)
