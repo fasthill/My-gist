@@ -12,6 +12,11 @@
 ### Master efficient workflows for cleaning real-world, messy data.
 * [kaggle Data Cleaning](https://www.kaggle.com/learn/data-cleaning)
 
+### Data Wrangling 
+* 처음부터 끝까지 데이터 처리 과정을 포함한다고 설명함. 세세한 정의는 각각 해석이 틀린다는 것을 알 수 있음.
+* includes all (cleaning, enriching, validating)....
+* [Harvard Business School](https://online.hbs.edu/blog/post/data-wrangling)
+
 ### Feature Reduction (Feature Selection + Feature Extraction)
 * Feature Selection
   * feature selection, also known as variable selection, attribute selection or variable subset selection, is the process of selecting a subset of relevant features (variables, predictors) for use in model construction. <br> 
