@@ -4,7 +4,10 @@
 * Data cleaning focuses on removing inaccurate data from your data set whereas data wrangling focuses on transforming the data’s format, typically by converting “raw” data into another format more suitable for use. 
 * Data cleaning enhances the data’s accuracy and integrity while wrangling prepares the data structurally for modeling. 
 * Traditionally, data cleaning would be performed before any practices of data wrangling being applied.
-* [read](https://www.inzata.com/data-wrangling-vs-data-cleaning-whats-the-difference/)
+* 
+     <img src="https://miro.medium.com/max/1400/1*32j2A1EFgqDHUcNTQackwA.png" width="700"/>
+* [read article1](https://www.inzata.com/data-wrangling-vs-data-cleaning-whats-the-difference/)
+* [read article2](https://blog.devgenius.io/data-cleaning-vs-data-wrangling-3577827e28a7)
 
 ### Master efficient workflows for cleaning real-world, messy data.
 * [kaggle Data Cleaning](https://www.kaggle.com/learn/data-cleaning)
