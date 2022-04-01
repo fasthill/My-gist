@@ -1,7 +1,7 @@
-### Data Wrangling vs. Cleaning(or Cleansing)
-* Data wrangling, also referred to as data munging, is the process of converting and mapping data from one raw format into another.
+### Cleaning(or Cleansing) vs. Data Wrangling
 * Data cleaning, also referred to as data cleansing, is the process of finding and correcting <span style='color:red'>inaccurate data</span> from a particular data set or data source. example)  identifying duplicate records, filling empty fields and fixing structural errors
 * Data cleaning focuses on removing inaccurate data from your data set whereas data wrangling focuses on transforming the data’s format, typically by converting “raw” data into another format more suitable for use. 
+* Data wrangling, also referred to as data munging, is the process of converting and mapping data from one raw format into another.
 * Data cleaning enhances the data’s accuracy and integrity while wrangling prepares the data structurally for modeling. 
 * Traditionally, data cleaning would be performed before any practices of data wrangling being applied.
 * 
@@ -25,3 +25,8 @@
   * 차원 축소 이용. 고차원 feture를 저차원 feature로 변환
 
     <img src="https://github.com/fasthill/My-gist/blob/main/data/picture/feature_extraction.JPG" width="500"/>
+
+### Feature Transformation, Feature Engineering
+* Feature Transformation:  which modifies the data, to make it more understandable for the machine. (예: 문자를 숫자로 변환, cleaning + wrangling)
+     * Note that we don’t create new columns from the current ones; This is where Transformation differs from Feature Engineering.
+* Feature Engineering: uses already modified features to create new ones, which will make it easier for any Machine Learning algorithm to understand and learn any pattern.
