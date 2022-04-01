@@ -1,3 +1,11 @@
+### Data Wrangling vs. Cleaning(or Cleansing)
+* Data wrangling, also referred to as data munging, is the process of converting and mapping data from one raw format into another.
+* Data cleaning, also referred to as data cleansing, is the process of finding and correcting <span style='color:red'>inaccurate data</span> from a particular data set or data source. example)  identifying duplicate records, filling empty fields and fixing structural errors
+* Data cleaning focuses on removing inaccurate data from your data set whereas data wrangling focuses on transforming the data’s format, typically by converting “raw” data into another format more suitable for use. 
+* Data cleaning enhances the data’s accuracy and integrity while wrangling prepares the data structurally for modeling. 
+* Traditionally, data cleaning would be performed before any practices of data wrangling being applied.
+* [read](https://www.inzata.com/data-wrangling-vs-data-cleaning-whats-the-difference/)
+
 ### Master efficient workflows for cleaning real-world, messy data.
 * [kaggle Data Cleaning](https://www.kaggle.com/learn/data-cleaning)
 
