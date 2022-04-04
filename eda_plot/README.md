@@ -10,3 +10,7 @@
 
 [feature engineering code](https://github.com/fasthill/feature-engineering-and-feature-selection) <br>
 [Feature engineering 설명](https://towardsdatascience.com/what-is-feature-engineering-importance-tools-and-techniques-for-machine-learning-2080b0269f10)
+
+
+### Feature Engineering 
+[log, outlier 처리](https://techblog-history-younghunjo1.tistory.com/104)
