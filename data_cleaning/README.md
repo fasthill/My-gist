@@ -36,3 +36,14 @@
      * Note that we don’t create new columns from the current ones; This is where Transformation differs from Feature Engineering.
 * Feature Engineering: uses already modified features to create new ones, which will make it easier for any Machine Learning algorithm to understand and learn any pattern.
 * Feature Engineering은 머신러닝 알고리즘을 작동하기 위해 데이터에 대한 도메인 지식을 활용하여 특징(Feature)를 만들어내는 과정. 머신러닝 모델을 위한 데이터 테이블의 컬럼(특징)을 생성하거나 선택하는 작업을 의미. Feature Engineering은 모델 성능에 미치는 영향이 크기 때문에 머신러닝 응용에 있어서 굉장히 중요한 단계이며, 전문성과 시간과 비용이 많이 드는 작업
+
+
+### Outlier Treatement
+* [Detecting And Treating Outliers In Python — Part 1](https://towardsdatascience.com/detecting-and-treating-outliers-in-python-part-1-4ece5098b755)
+* [Detecting And Treating Outliers In Python — Part 2](https://towardsdatascience.com/detecting-and-treating-outliers-in-python-part-2-3a3319ec2c33)
+* [Detecting and Treating Outliers In Python — Part 3](https://towardsdatascience.com/detecting-and-treating-outliers-in-python-part-3-dcb54abaf7b0)
+* [5 Outlier Detection Techniques that every “Data Enthusiast” Must Know](https://towardsdatascience.com/5-outlier-detection-methods-that-every-data-enthusiast-must-know-f917bf439210)
+* [Cleaning up Data from Outliers](https://www.pluralsight.com/guides/cleaning-up-data-from-outliers)
+* [How to Scale Data With Outliers for Machine Learning](https://machinelearningmastery.com/robust-scaler-transforms-for-machine-learning/)
+* 
+* 
