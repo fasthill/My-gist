@@ -45,5 +45,8 @@
 * [5 Outlier Detection Techniques that every “Data Enthusiast” Must Know](https://towardsdatascience.com/5-outlier-detection-methods-that-every-data-enthusiast-must-know-f917bf439210)
 * [Cleaning up Data from Outliers](https://www.pluralsight.com/guides/cleaning-up-data-from-outliers)
 * [How to Scale Data With Outliers for Machine Learning](https://machinelearningmastery.com/robust-scaler-transforms-for-machine-learning/)
-* 
-* 
+
+
+### Missing Value Treatement
+* [A Better Way to Handle Missing Values in your Dataset: Using IterativeImputer (PART I)](https://towardsdatascience.com/a-better-way-to-handle-missing-values-in-your-dataset-using-iterativeimputer-9e6e84857d98)
+* [A Better Way to Handle Missing Values in your Dataset: Using IterativeImputer on the Stock Market Data (PART II)](https://levelup.gitconnected.com/a-better-way-to-handle-missing-values-in-your-dataset-using-iterativeimputer-on-the-stock-market-dbbb5d4ef458)
