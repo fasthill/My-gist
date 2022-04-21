@@ -50,3 +50,6 @@
 ### Missing Value Treatement
 * [A Better Way to Handle Missing Values in your Dataset: Using IterativeImputer (PART I)](https://towardsdatascience.com/a-better-way-to-handle-missing-values-in-your-dataset-using-iterativeimputer-9e6e84857d98)
 * [A Better Way to Handle Missing Values in your Dataset: Using IterativeImputer on the Stock Market Data (PART II)](https://levelup.gitconnected.com/a-better-way-to-handle-missing-values-in-your-dataset-using-iterativeimputer-on-the-stock-market-dbbb5d4ef458)
+
+### Normal Distribution
+* [How to Transform Data to Better Fit The Normal Distribution](https://machinelearningmastery.com/how-to-transform-data-to-fit-the-normal-distribution/)
