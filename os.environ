@@ -1,0 +1,6 @@
+환경변수 설정: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=shwotjd14&logNo=221226368685
+             https://appia.tistory.com/487
+             
+환경변수 mypass 입력후 사용
+
+mypass = os.environ['mypass']
