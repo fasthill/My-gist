@@ -25,7 +25,17 @@
 
 
 #### data site (국내)
+* [대한민국 통계청](https://kostat.go.kr)
+* [마이크로데이터 통합서비스](https://mdis.kostat.go.kr)
+* [한국데이터산업진흥원 데이터스토어](https://www.datastore.or.kr/)
+* [지역별 지도로 데이터 찾기 등](https://www.bigdata-map.kr/)
 * [AIFactory](https://aifactory.space)
 * [공공데이터포털](https://www.data.go.kr/)
 * [AIHub](https://www.aihub.or.kr)
 * [DACON](https://dacon.io)
+* [인공지능 각종 해커톤 안내	](https://aifactory.space/)
+* [한국지능정보사회진흥원 인공지능 데이터 허브](https://aihub.or.kr/)
+
+![image](https://user-images.githubusercontent.com/16912718/167574538-a729c04d-4946-40c2-b270-81ac8c8ff75e.png)
+
+
