@@ -1,7 +1,7 @@
 환경변수 설정: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=shwotjd14&logNo=221226368685
              https://appia.tistory.com/487
              
-# apikey hide : 고급시스템설정 -> 시스템 속성 -> 환경변수 > 시스템변수 -> 새로만들기 -> 변수명, 값입력
+# apikey hide : 고급시스템설정 -> 시스템 속성 -> 환경변수 > 시스템변수 -> 새로만들기 -> 변수명, 값입력.. 재부팅 후 사용
 # os.environ['변수명'] <- 값을 대체 (비밀번호일 경우 시스템변수 사용)
              
 환경변수 mypass 입력후 사용
