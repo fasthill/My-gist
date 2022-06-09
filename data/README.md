@@ -16,6 +16,7 @@
 * [Open Data Monitor](http://opendatamonitor.eu) &nbsp;&nbsp;EU open data
 * [퀀들](http://quandl.com) &nbsp;&nbsp;NASDAQ data link\
 * [VisualData](https://visualdata.io/discovery)
+* [한글 자연어 처리, KorQuAD 2.0, 한국어 Machine Reading Comprehension 데이터셋](https://korquad.github.io/)
 
 ##### 공개 데이터가 나열되어 있는 페이지
 * [위키백과 ML datasets, https://goo.gl/SJHN2k](https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research#Multivariate_data)
