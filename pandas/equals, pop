@@ -1,4 +1,4 @@
-df1.equals(df2)
+df1.equals(df2)  # 두개의 df가 같은지 확인
 
 df_ser = df1.pop('column_name')  # series
 df_new = pd.DataFrame(df_ser)  # make df using column_name as column name
