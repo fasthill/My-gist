@@ -4,6 +4,6 @@
         element = driver.find_element(By.ID, 'widgetFieldDateRange')  
         driver.execute_script("arguments[0].click();", element)
 
-### 마우스 오른쪽 클릭이 안될 때. -> shift +ctrl + i 동시 클릭
+### Chrome Dev를 위한 마우스 오른쪽 클릭이 안될 때. -> shift +ctrl + i 동시 클릭
 
 ### [Codetorial-BeautifulSoup](https://codetorial.net/beautifulsoup/index.html)
