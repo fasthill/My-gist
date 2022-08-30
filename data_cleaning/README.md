@@ -53,3 +53,4 @@
 
 ### Normal Distribution
 * [How to Transform Data to Better Fit The Normal Distribution](https://machinelearningmastery.com/how-to-transform-data-to-fit-the-normal-distribution/)
+* [How do I know if my data have a normal distribution?](https://www.graphpad.com/support/faq/testing-data-for-normal-distrbution/)
