@@ -1,0 +1,7 @@
+from selenium import webdriver as wd
+from webdriver_manager.chrome import ChromeDriverManager
+
+chrome_options = wd.ChromeOptions()
+driver = wd.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+
+# chrome version 확인후 재설치.
