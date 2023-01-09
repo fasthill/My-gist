@@ -19,6 +19,8 @@
         # -----------
         # res = requests.get(url)
         # data = json.loads(res.text)
+        # api 사용할 때 json 에러 -- JSONDecodeError: Expecting value: line 1 column 1 (char 0) -- 가
+        # 발생할 시는 selenium을 이용하면 해결됨.
 
 ### Chrome Dev를 위한 마우스 오른쪽 클릭이 안될 때. -> shift +ctrl + i 동시 클릭
 
