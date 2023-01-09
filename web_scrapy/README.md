@@ -10,7 +10,15 @@
         # res = scraper.get(url, headers= , cookies= )
         # res.text
         # https://qna.programmers.co.kr/questions/9558/ 참조
-         . cloudscraper라는 다른 모듈이 있는데 이것도 작동하는 것 같습니다. 
+         . cloudscraper라는 다른 모듈이 있는데 이것도 작동하는 것 같습니다.    
+         
+###  json 처리
+        # driver.get(url)
+        # element = driver.find_element(By.CSS_SELECTOR, '...')
+        # data = json.loads(element.text)
+        # -----------
+        # res = requests.get(url)
+        # data = json.loads(res.text)
 
 ### Chrome Dev를 위한 마우스 오른쪽 클릭이 안될 때. -> shift +ctrl + i 동시 클릭
 
