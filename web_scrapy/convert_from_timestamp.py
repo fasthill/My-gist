@@ -1,13 +1,47 @@
 #  Unix timestampe 
-import datetime
+import datetime, pytz
 
 # 현재 local 시간 표시(년월일시간)를 timestamp 표시로 변환
-timestamp = datetime.datetime(2023, 1, 9, 15, 30, 40).timestamp() #2023년 1월 9일 15시 30분 40초 Local time.
+KST = pytz.timezone('Asia/Seoul')
+# timestamp = datetime.datetime(2023, 1, 9, 20, 25, 40, tzinfo=KST).timestamp() #2023년 1월 9일 15시 30분 40초 Local time.
+timestamp = datetime.datetime.now(timezone('Asia/Seoul')).timestamp()
+
+print("timestamp: {}, seoul time: {}".format(timestamp, datetime.datetime.now(timezone('Asia/Seoul'))))
 
 def datefromtimestamp(timestamp): # timestamp표시를 년월일시간표시로 변환
-  date = datetime.datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d:%H:%M:%S') # GMT(UTC) 시간 표시로 변환
-  # date = datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d:%H:%M:%S') # 로컬 시간 표시로 변환
-  return date
+    date = datetime.datetime.utcfromtimestamp(timestamp) # GMT(UTC) 시간 표시로 변환
+#     date = datetime.datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d:%H:%M:%S') # GMT(UTC) 시간 표시로 변환
+#     date = datetime.datetime.fromtimestamp(timestamp, tz=pytz.utc).strftime('%Y-%m-%d:%H:%M:%S') # UTC 표준시간
+#     date = datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d:%H:%M:%S') # 로컬 시간 표시로 변환
+    return date
 
-print(datefromtimestamp(timestamp))  
-# 2023-01-09:06:30:40  #: UTC로 변환되어 표시됨. 9시간 차이
+def week_day(date):
+#     days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    days = ['월', '화', '수', '목', '금', '토', '일']
+    day = date.weekday()
+    return days[day]
+
+dt = datefromtimestamp(timestamp) # UTC 표준시간. datetime format
+print("UTC 표준시간", dt)  
+
+# tzone = pytz.timezone('US/Eastern')
+tzone = pytz.timezone('Asia/Seoul')
+loc_dt = dt.astimezone(tzone)
+print("서울 표준시간", loc_dt)  
+
+year = dt.year
+month = dt.month
+weekday = week_day(dt)
+day = dt.day
+hour = dt.hour
+print("UTC: {}년, {}월 {}일 {}요일 {}시".format(year, month, day, weekday, hour))
+
+year = loc_dt.year
+month = loc_dt.month
+weekday = week_day(loc_dt)
+day = loc_dt.day
+hour = loc_dt.hour
+print("서울 표준시간: {}년, {}월 {}일 {}요일 {}시".format(year, month, day, weekday, hour))
+
+print(dt.astimezone(KST).strftime('%Y-%m-%d, %H:%M:%S %p'))
+
