@@ -1,0 +1,2 @@
+%autosave 60 # save every 60 seconds
+%autosave 0  # do not autosave
