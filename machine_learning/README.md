@@ -28,4 +28,8 @@ The cross_validate function differs from cross_val_score in two ways -
 * train_test_split에서 stratify argument사용은 1회에 한하여 사용됨. one time split 반면에
 * StratifiedShuffleSplit class 사용은 cross validation에서 사용되면서 반복적인 batch_size로 나눌때마다 사용됨
 
+### ■ 리지, 라쏘 (Ridge, Lasso)
+* [간략설명 1](https://brunch.co.kr/@itschloe1/11)
+* [간략설명 2](https://data-gardner.tistory.com/25)
+
 ### ■ [Codetutorial-Tensorflow](https://codetorial.net/tensorflow/index.html)
