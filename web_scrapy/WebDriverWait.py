@@ -43,14 +43,15 @@ element = WebDriverWait(driver, 10).until(
     )
 
 wait = WebDriverWait(driver, 10).until(
-        EC.text_to_be_present_in_element((By.XPATH, '------'), "text_내용") # 지정된 element의 value text의 내용이 일지하는지 확인
+        EC.text_to_be_present_in_element((By.XPATH, '------'), "this is text") # 지정된 element의 text의 내용이 일지하는지    
+        # 예 <p>this is text</p>     
     )
     
- 
-wait = WebDriverWait(driver, 5).until(
-        EC.text_to_be_present_in_element_value((By.XPATH, '-------'), # 지정된 element의 value가 text를 갖고 있는지 확인
-                                                'string1'
-                                                'string2')
+wait = WebDriverWait(driver, 10).until(
+        EC.text_to_be_present_in_element_value((By.XPATH, '-------'), # 지정된 element의 value와 일치 여부 확인
+                                                'text value')
+        # 예: <input type="text" value="text value">  # element 내 value attribute 값 일치 여부
+        # <input type="button" value="button text value">
     )
   
-# https://mebadong.tistory.com/101 를 기반으로 작성
+# https://www.selenium.dev/selenium/docs/api/py/webdriver_support/selenium.webdriver.support.expected_conditions.html
