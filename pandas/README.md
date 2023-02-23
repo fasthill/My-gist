@@ -4,6 +4,10 @@ https://ml-ko.kr/homl2/tools_pandas.html
 [Pandas 완전정복시리즈 2편, 김태준](https://wikidocs.net/book/7188)
 
 ### ■ .apply, .map. .applymap
+
+### apply, map
+df.apply(pd.to_numeric)['close_cr'].map(lambda x : 0 if x <= 0 else ( 1 if x > 0  else  "" ))
+
 #### First major difference: DEFINITION
 * map is defined on <font color='red'>Series ONLY</font>
 * applymap is defined on <font color='blue'>DataFrames ONLY</font>
