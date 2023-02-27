@@ -32,4 +32,7 @@ The cross_validate function differs from cross_val_score in two ways -
 * [간략설명 1](https://brunch.co.kr/@itschloe1/11)
 * [간략설명 2](https://data-gardner.tistory.com/25)
 
+### ■ val_loss는 converge하지 않고, val_accuracy는 높아질 때
+* https://github.com/keras-team/keras/issues/5359  설명참조
+
 ### ■ [Codetutorial-Tensorflow](https://codetorial.net/tensorflow/index.html)
