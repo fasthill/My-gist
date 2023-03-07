@@ -38,4 +38,9 @@ The cross_validate function differs from cross_val_score in two ways -
 ### ■ scaler, model 저장하기
 * https://m.blog.naver.com/wideeyed/221330321950
 
+### ■ 정밀도(Precision), 재현율(Recall)
+* 정밀도(precision = TP / (TP + FP) )
+* 재현율(Recall = TP / (TP + FN) )
+<img src="https://raw.githubusercontent.com/fasthill/My-gist/main/data/picture/confusion_matrix.png" width="800"/> <br>
+
 ### ■ [Codetutorial-Tensorflow](https://codetorial.net/tensorflow/index.html)
