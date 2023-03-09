@@ -1,0 +1,2 @@
+# # 최초의 empty df 생성
+df_base = pd.DataFrame(pd.Series([],dtype=pd.StringDtype(), name='parameter')).set_index('parameter')
