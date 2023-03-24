@@ -1,0 +1,6 @@
+uninstall이 되지 않을때
+package가 여러버젼이 여러곳에 깔려 있는 경우가 있을 수 있음.
+jupyter notebook에서 !pip uninstall somepackage가 동작하지 않고 멈추어 있을 때는
+윈도우 창(cmd)에서 pip uninstall somepackage를 여러번 수행하면 여러버젼의 package가 차례로 제거될 수 있음.
+
+이런 방식으로 전체를 제거하고 jupyter notebook에서 다시 install하여 사용할 수 있음.
