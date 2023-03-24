@@ -11,4 +11,5 @@ startdate = datetime(2022,1,1)
 enddate = datetime(2023,3,5)
 data = pdr.get_data_yahoo(y_symbols, start=startdate, end=enddate)
 
-# 에러가 발생시에는 yfinance와 pandas_datareader 를 완전히 삭제후 pip install로 다시 설치후 진행하면 됨.
+# 에러가 발생시에는 yfinance와 pandas_datareader 를 완전히 삭제후 pip install로 다시 설치후 진행하면 됨.(아래 참조)
+# 참조: https://github.com/fasthill/My-gist/blob/main/pip%20uninstall
