@@ -38,6 +38,7 @@ bayes_cv_tuner = BayesSearchCV(
     ),
     n_jobs = 3,
     n_iter = ITERATIONS,   
+    # n_iter = 200, means the model will be fit 200 times for different combination of parameter distributions specified * value specified of cv parameter 
     verbose = 0,
     refit = True,
     random_state = 42
