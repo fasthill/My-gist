@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/55849512/gridsearchcv-vs-bayesian-optimization
+
+- GridSearchCV를 사용하지 말고, RandomizedSearchCV나 BayesSearchCV를 사용하라!!
