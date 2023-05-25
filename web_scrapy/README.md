@@ -4,6 +4,9 @@
         element = driver.find_element(By.ID, 'widgetFieldDateRange')  
         driver.execute_script("arguments[0].click();", element)
         
+        혹은, form 구성하여 여러개의 id가 존재할 수 있으니, 이럴 경우 아래와 같이 하면 됨. 위 폴더 항목에 따로 설명되어 있음.
+        driver.find_element(By.XPATH, '(.//*[@id="widgetFieldDateRange"])[2]').click()
+        
 ###  Forbidden 403,  Attention Required, Cloudflare error
         # import cfscrape
         # scraper = cfscrape.create_scraper()
