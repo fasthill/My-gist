@@ -1,0 +1,14 @@
+<input name="tb_date" type="text" value="2020-07-15" 
+onchange="javascript:setTimeout('__doPostBack(\'tb_date\',\'\')', 0)" 
+onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) 
+return false;" id="tb_date" class="align-center" 
+style="font-size:14pt;width:120px;">
+
+위와 같은 element 의 value값을 수정하기 위하여는 
+
+date_element = driver.find_element_by_name('tb_date')
+date_element.clear();
+date_element.send_keys('2020-07-01')
+date_element.click();
+
+위와 같이 수행하면 날짜를 바꿔서 원하는 결과를 얻을 수 있음.
