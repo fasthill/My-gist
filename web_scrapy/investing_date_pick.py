@@ -42,6 +42,8 @@ def get_date(start_date, end_date):
     end_element.click()
 
     driver.find_element(By.CLASS_NAME, 'inv-button.HistoryDatePicker_apply-button__fPr_G').click()
+    
+    return
 
 main_url = 'https://www.investing.com/indices/us-30-historical-data'
 driver.get(main_url)
