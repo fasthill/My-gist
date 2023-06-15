@@ -25,3 +25,6 @@ datetime.time(13, 55, 26)
 '''
 
 # from https://www.digitalocean.com/community/tutorials/python-string-to-datetime-strptime
+
+date_time = datetime_object.strftime("%m/%d/%Y, %H:%M:%S")  # datetime to string
+print("date and time:",date_time)
