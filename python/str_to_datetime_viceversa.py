@@ -24,6 +24,10 @@ time_object
 datetime.time(13, 55, 26)
 '''
 
+# dataframe datetime 으로 전환
+MATCHING_DAYS['date_all'] =  pd.to_datetime(MATCHING_DAYS['date_all'],format='%Y-%m-%d').dt.date
+
+
 # from https://www.digitalocean.com/community/tutorials/python-string-to-datetime-strptime
 
 datetime_object = datetime.datetime(2022, 1, 5)
