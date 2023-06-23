@@ -3,7 +3,7 @@ import requests
 
 import pandas as pd
 
-import cfscrape
+import cfscrape  # Forbidden 403 발생시 requests 대신 사용
 scraper = cfscrape.create_scraper()
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) \
@@ -11,7 +11,8 @@ headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) \
 
 url = 'https://www.investing.com/indices/nq-100-futures-historical-data'
 
-r = scraper.get(url, headers=headers)
+r = scraper.get(url, headers=headers)  
+# r = requests.get(url, headers=headers)
 html = r.content
 
 class_name = "datatable_table__D_jso datatable_table--border__B_zW0 datatable_table--mobile-basic__W2ilt datatable_table--freeze-column__7YoIE"
