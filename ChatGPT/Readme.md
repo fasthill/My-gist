@@ -2,6 +2,7 @@
 - GPTers 그룹: https://www.gpters.org/home
 
 ### ChatGPT Prompt Library: <br>
+- awesome_chatgpt_prompt github https://github.com/fasthill/awesome-chatgpt-prompts
 - Explore Hundreds of the Best ChatGPT Prompts: https://www.awesomegptprompts.com/ <br>
 - Discover the Collection of best ChatGPT Prompts: https://promptvine.com/  <br>
 
