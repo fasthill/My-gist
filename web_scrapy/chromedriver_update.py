@@ -18,7 +18,7 @@ options = wd.ChromeOptions()
 driver = wd.Chrome(service=service, options=options)
 
 # 혹은,
-# 최근 chromedriver를 다운받아 경로 설정후 실행. 아래는 116 폴더에 chromedriver 위한 시키고 실행한 예
+# 최근 chromedriver를 다운받아 경로 설정후 실행. 아래는 116 폴더에 chromedriver를 설치하고 실행한 예
 service = Service(r"116/chromedriver.exe")  # 이제는 service를 반드시 사용해야 함.
 options = wd.ChromeOptions()
 driver = wd.Chrome(service=service, options=options)
