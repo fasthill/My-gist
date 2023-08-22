@@ -1,6 +1,13 @@
 # !pip install -U selenium
 # !pip install chromedriver_autoinstaller
 
+'''
+# Chrome browser version이 바뀔 때마다,
+# 여기를 살피고, https://chromedriver.chromium.org/downloads/version-selection
+# 여기에서, https://googlechromelabs.github.io/chrome-for-testing/
+# Chrome Browser version과 맞는 chromedriver를 download 받아서 Service에 경로를 지정하여 사용하면 됨.
+'''
+
 from selenium import webdriver as wd
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -23,6 +30,12 @@ service = Service(r"116/chromedriver.exe")  # 이제는 service를 반드시 사
 options = wd.ChromeOptions()
 driver = wd.Chrome(service=service, options=options)
 
+# or,
+
+chromedriver_path=r'C:/Users/user/.wdm/drivers/chromedriver/win32/116/chromedriver.exe'  # 폴더명 입력후 실행
+service = Service(executable_path = chromedriver_path )
+options = wd.ChromeOptions()
+driver = wd.Chrome(service=service, options=options)
 
 # Chrome browser version이 바뀔 때마다,
 # 여기를 살피고, https://chromedriver.chromium.org/downloads/version-selection
