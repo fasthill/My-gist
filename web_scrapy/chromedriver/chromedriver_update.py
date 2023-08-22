@@ -14,7 +14,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 import chromedriver_autoinstaller
 
-driver_name = chromedriver_autoinstaller.install()  # Check if the current version of chromedriver exists
+chrome_version = chromedriver_autoinstaller.get_chrome_version() # 현재 chrome version 확인
+
+driver_name = chromedriver_autoinstaller.install()  # chromedriver path 확인
+                                      # Check if the current version of chromedriver exists
                                       # and if it doesn't exist, download it automatically,
                                       # then add chromedriver to path
 time.sleep(1)
