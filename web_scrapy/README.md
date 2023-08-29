@@ -27,4 +27,6 @@
 
 ### Chrome Dev를 위한 마우스 오른쪽 클릭이 안될 때. -> shift +ctrl + i 동시 클릭
 
-### [Codetorial-BeautifulSoup](https://codetorial.net/beautifulsoup/index.html)
+### [Codetorial-BeautifulSoup](https://codetorial.net/beautifulsoup/index.html)  
+
+### [BeautifulSoup4.0.0문서](https://www.crummy.com/software/BeautifulSoup/bs4/doc.ko/)
