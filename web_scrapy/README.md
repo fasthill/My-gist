@@ -1,3 +1,7 @@
+###  CSS_SELECTOR ATTR 형식
+        # driver.find_elements(By.CSS_SELECTOR, 'input[type="date"][value="2023-08-14"]') 
+        # 'tagname[attr1='aaaa'][attr2='bbbb']' 형식으로 기입
+
 ###  Error Message: element not interactable error 발생 처리
         # driver.find_element(By.ID, 'widgetFieldDateRange').send_keys(Keys.ENTER)
         # Message: element not interactable error발생시 아래처럼 강제로 javascript로 click해주어야 함.
