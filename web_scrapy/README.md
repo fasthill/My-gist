@@ -1,4 +1,4 @@
-###  CSS_SELECTOR ATTR 형식
+###  By.CSS_SELECTOR ATTR 추가 방법 형식
         # driver.find_elements(By.CSS_SELECTOR, 'input[type="date"][value="2023-08-14"]') 
         # 'tagname[attr1='aaaa'][attr2='bbbb']' 형식으로 기입
 
