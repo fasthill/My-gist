@@ -19,3 +19,9 @@ driver.switch_to.default_content()  # 처음으로 빠져 나오기
 
 driver.switch_to_default_content()
 driver.switch_to.frame('id' or 'name') 
+
+# id나 name이 없으면 아래와 같이 먼저 element를 선택하고 switch를 하면 됨.
+iframe_demo = driver.find_element(By.XPATH, "//iframe[@class='demo-frame']")  # use "Copy Xpath" in inspection.
+# many examples in https://selenium-python.readthedocs.io/locating-elements.html for several different cases
+# with class =, id = , name =, (By.XPATH, "//iframe[@name='XXXX'][@type='XXXX']")
+driver.switch_to.frame(iframe_demo);
