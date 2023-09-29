@@ -33,13 +33,19 @@ def get_date(start_date, end_date):
     start_element = start.find_element(By.CSS_SELECTOR, 'input[type=date]')
     end_element = end.find_element(By.CSS_SELECTOR, 'input[type=date]')
 
+    end_date1 = end_date + "1" # 마지막 값을 추가해서 value 값을 ''으로 바꿈. 왜 그런지는 모르겠음.
+    end_element.send_keys(end_date1) # 맨처음 value값을 ''으로 바꿈
+    time.sleep(0.5)
+
     start_element.clear()
-    start_element.send_keys(start_date)
+    start_element.send_keys(start_date) # 두번째로 시작일자 입력
     start_element.click()
+    time.sleep(0.5)
 
     end_element.clear()
-    end_element.send_keys(end_date)
+    end_element.send_keys(end_date)  # 세번째 마지막으로 마감일자 입력 
     end_element.click()
+    time.sleep(0.5)
 
     driver.find_element(By.CLASS_NAME, 'inv-button.HistoryDatePicker_apply-button__fPr_G').click()
     
