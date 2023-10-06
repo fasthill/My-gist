@@ -34,6 +34,7 @@ def get_date(start_date, end_date):
     end_element = end.find_element(By.CSS_SELECTOR, 'input[type=date]')
 
     end_date1 = "2023-19-281" # 마지막 값을 추가해서 value 값을 ''으로 바꿈. 왜 그런지는 모르겠음.
+    # 위와 다른 숫자를 집어 넣으면 제대로 원하는 결과가 나오지 않는 경우가 있어서 이유는 모르나 위 숫자를 사용함.
     end_element.send_keys(end_date1) # 맨처음 value값을 ''으로 바꿈
     time.sleep(0.5)
 
