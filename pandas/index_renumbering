@@ -1,0 +1,1 @@
+df.set_index(np.arange(len(df.index)), inplace=True) # 0부터 일련번호를 index로 지정함
