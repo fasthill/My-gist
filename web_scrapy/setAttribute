@@ -1,0 +1,12 @@
+# 가능하면 사용하지 말것. 
+
+ driver.get("https://www.naver.com")
+
+ input_tag = driver.find_element(By.ID, 'query')[0]
+ driver.execute_script("arguments[0].setAttribute('value', 'XXXXXYYYY')", input_tag)
+ driver.execute_script("arguments[0].removeAttribute('value')", input_tag) # 내용이 없어짐
+
+ driver.find_element(By.ID, 'search-btn').click()
+
+ # input_tag.click() # execute_script와는 같이 사용하면 안됨. 사용했을 경우는 동작하지 않음.
+ # input_tag.send_keys("ddd")
