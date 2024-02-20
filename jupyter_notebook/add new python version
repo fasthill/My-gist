@@ -5,17 +5,17 @@ caution : use cmd not bash
 python 신규버젼이 깔린 곳으로 가서
 예: C:\Users\user\AppData\Local\Programs\Python\Python312
 
-python --version 
+!python --version 
 으로 버젼 확인하고 아래 명령 프롬프트 진행
 
-python -m pip install ipykernel
+!python -m pip install ipykernel
 
-python -m ipykernel install --user --name="Python3.12.1"  //space 없이 작성
+!python -m ipykernel install --user --name="Python3.12.1"  //space 없이 작성
 # 이후 jupyter notebook에서 
 kernel 메뉴에서 change kernel 로 가서 추가 python version 선택하여 진행
 
 python version 삭제할 때
 
-jupyter kernelspec uninstall python3.12.1
+!jupyter kernelspec uninstall python3.12.1
   
-Remove 1 kernel specs [y/N]: y  //반드시 실행하고 화인
+!Remove 1 kernel specs [y/N]: y  //반드시 실행하고 화인
