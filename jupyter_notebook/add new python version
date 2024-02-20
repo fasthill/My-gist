@@ -1,5 +1,7 @@
 새로운 python version을 추가할 때 아래의 명령 이용
 
+## use cmd not bash
+
 python 신규버젼이 깔린 곳으로 가서
 예: C:\Users\user\AppData\Local\Programs\Python\Python312
 
