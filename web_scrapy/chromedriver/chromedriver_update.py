@@ -3,8 +3,10 @@
 
 '''
 # Chrome browser version이 바뀔 때마다
-# https://chromedriver.chromium.org/downloads/version-selection 여기에서 내용중에 맨 처음 나오는 "the Chrome for Testing (CfT) availability dashboard." 로 링크해서 아래사이트로 이동
-# https://googlechromelabs.github.io/chrome-for-testing/ 여기로 가서 browser version에 맞는 내용을 확인해서 (위의 내용을 확인하지 않고 이 곳으로 직접 점프해도 됨)
+# https://chromedriver.chromium.org/downloads/version-selection 
+# 여기 맨 처음 나오는 링크 "the Chrome for Testing (CfT) availability dashboard." 로 링크해서 아래 사이트로 이동
+# https://googlechromelabs.github.io/chrome-for-testing/ 
+# 여기로 가서 browser version에 맞는 내용을 확인해서 (위의 내용을 확인하지 않고 이 곳으로 직접 점프해도 됨)
 # Chrome Browser version과 맞는 chromedriver를 download 받아서 Service에 경로를 지정하여 사용하면 됨.
 '''
 
@@ -41,6 +43,9 @@ options = wd.ChromeOptions()
 driver = wd.Chrome(service=service, options=options)
 
 # Chrome browser version이 바뀔 때마다,
-# https://chromedriver.chromium.org/downloads/version-selection 여기에서 내용중에 맨 처음 나오는 "the Chrome for Testing (CfT) availability dashboard." 로 링크해서 아래사이트로 이동
-# https://googlechromelabs.github.io/chrome-for-testing/ 여기로 가서 browser version에 맞는 내용을 확인해서 (위의 내용을 확인하지 않고 이 곳으로 직접 점프해도 됨)
+# Chrome browser version이 바뀔 때마다
+# https://chromedriver.chromium.org/downloads/version-selection 
+# 여기 맨 처음 나오는 링크 "the Chrome for Testing (CfT) availability dashboard." 로 링크해서 아래 사이트로 이동
+# https://googlechromelabs.github.io/chrome-for-testing/ 
+# 여기로 가서 browser version에 맞는 내용을 확인해서 (위의 내용을 확인하지 않고 이 곳으로 직접 점프해도 됨)
 # Chrome Browser version과 맞는 chromedriver를 download 받아서 Service에 경로를 지정하여 사용하면 됨.
