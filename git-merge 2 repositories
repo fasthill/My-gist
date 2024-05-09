@@ -1,0 +1,9 @@
+folder_1과 folder_2에 각각 .git으로 진행하였을 경우에 한개의 repository로 함치기 위한 순서
+
+folder_1에 folder_2를 합치는 경우
+
+1. cd path/folder_1
+2. git remote add any_name /path/folder_2
+3. git fetch any_name --tags
+4. git merge --allow-unrelated-histories any_name/main # or any branch you want to merge. 합치고자 하는 branch 명(main)
+5. git remote remove any_name
