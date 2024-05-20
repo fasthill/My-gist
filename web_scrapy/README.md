@@ -1,3 +1,8 @@
+###  driver.get(url) 대기 제한
+        # driver.get(url)에서 페이지가 정상적인데도 페이지에 접근하지 못할 때 시간 제한 사용
+        # 대기시간을 5초로 제한할 경우
+        # self.driver.set_page_load_timeout(5)
+
 ###  By.CSS_SELECTOR ATTR 추가 방법 형식
         # driver.find_elements(By.CSS_SELECTOR, 'input[type="date"][value="2023-08-14"]') 
         # 'tagname[attr1='aaaa'][attr2='bbbb']' 형식으로 기입
