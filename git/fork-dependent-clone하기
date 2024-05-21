@@ -1,0 +1,30 @@
+github에서 fork하고자하는 외부 repository이름과 동일하게 new repository 생성
+    (다른 이름으로 해도 무방하나 아래 내용을 진행하면서 모든 파일위치에서 명칭을 수정해 주어야 함.)
+
+* local bash창에서 repository clone을 함. 주의: 이후 bash창에서는 main branch에서 작업
+git clone https://github.com/automationhacks/people-api.git  
+
+people-api 폴더로 이동후에,
+① git branch -M main 명령으로 master branch를 main branch로 이름변경
+② .git/config파일에서
+[remote "origin"]
+	url = https://github.com/fasthill/people-api.git  여기에서 내 위치와 저장소 명칭 확인 후 수정
+	fetch = +refs/heads/*:refs/remotes/origin/*      참고: 여기 위치로 가서 HEAD 파일을 수정해야 함(master를 main으로).
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main   여기에서 master를 main으로 수정
+
+③ .git/refs/remotes/origin/HEAD 파일 수정 origin/master 를 origin/main 으로 수정
+④ .git/packed-refs 파일 수정 refs/remotes/origin/master를 origin/main으로
+    이 파일에 remote branch 정보가 포함되어 있음.
+
+⑤ bash화면에서 gir branch -a 로 branch 확인
+⑥ github에서 최초의 파일 생성 ( 후에 지울 것이므로 첫번째 commit해서 main branch 생성해 놓는 목적임.)
+⑦ bash 창에서 git status 확인.
+⑧ git push -f  "origin/main 덮어 쓰기". force overwrite of local branch
+⑨ 차례로 remote branch checkout하여 push하기
+   git branch -a로 아래와 같이 확인하였다면, 아래과 같이 각각 git switch, git push로 전체 branch 진행
+   - remotes/origin/dependabot/pip/certifi-2022.12.7  → git switch dependabot/pip/certifi-2022.12.7 로 branch 변경후 git push
+   - remotes/origin/dependabot/pip/werkzeug-2.2.3  → git switch dependabot/pip/werkzeug-2.2.3 로 branch 변경후 git push
+⑩ github에서 화면 refresh후 내용 확인 (branch 2개가 pull request 대기하고 있음 확인)
+⑪ 
