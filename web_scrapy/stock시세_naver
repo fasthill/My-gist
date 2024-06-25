@@ -5,3 +5,8 @@ https://finance.naver.com/item/sise_time.naver?code=005930&thistime=202406211700
 # page = 페이지 수, 하루 전체 페이지는 40쪽에서 시작하여 1쪽으로 완료. 40쪽은 09시 시작부터 1쪽은 마감시간까지 페이지별로
   10개 list
   1분씩 기록함.
+
+# naver에서 일별 시세 가져오기 주소
+https://finance.naver.com/item/sise_day.naver?code=005930&page=1
+# page : 상장날짜부터 오늘까지 각 페이지강 10개 리스를 하여 페이지수 구성
+# page=1은 오늘 날짜부터 -10일까지 테이블 구성됨.
