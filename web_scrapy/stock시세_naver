@@ -10,3 +10,6 @@ https://finance.naver.com/item/sise_time.naver?code=005930&thistime=202406211700
 https://finance.naver.com/item/sise_day.naver?code=005930&page=1
 # page : 상장날짜부터 오늘까지 각 페이지강 10개 리스를 하여 페이지수 구성
 # page=1은 오늘 날짜부터 -10일까지 테이블 구성됨.
+
+#naver에서 외국인, 기관 별 
+https://finance.naver.com/item/frgn.naver?code=005930&page=141
