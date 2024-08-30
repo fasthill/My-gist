@@ -17,7 +17,7 @@ driver.switch_to.default_content()  # 처음으로 빠져 나오기
 
 # 프레임 전환하기
 
-driver.switch_to_default_content()
+driver.switch_to.default_content()
 driver.switch_to.frame('id' or 'name') 
 
 # id나 name이 없으면 아래와 같이 먼저 element를 선택하고 switch를 하면 됨.
